@@ -19,6 +19,11 @@ calculate.addEventListener("click", ()=>{
         outputArea.style.color="red";
         outputArea.innerHTML="Enter all inputs";
     }
+    else if(baseVal<0 || heightVal<0){
+        console.log("Enter all inputs");
+        outputArea.style.color="red";
+        outputArea.innerHTML="Height or base can't be negative. Eliminate negativity";
+    }
     else{
         outputArea.style.color="rgb(106, 201, 69)";
         calculateHypotenuse(baseVal, heightVal);

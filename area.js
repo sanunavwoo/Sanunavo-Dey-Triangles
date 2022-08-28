@@ -27,6 +27,10 @@ calculateBtn.addEventListener("click", ()=>{
         outputArea.style.color="red";
         outputArea.innerHTML="Enter all inputs";
     }
+    else if(side1Val<0 || side2Val<0 || side3Val<0){
+        outputArea.style.color="red";
+        outputArea.innerHTML="Sides can't be negative. Eliminate negativity";
+    }
     else{
         outputArea.style.color="rgb(106, 201, 69)";
         calculateArea(side1Val, side2Val, side3Val);

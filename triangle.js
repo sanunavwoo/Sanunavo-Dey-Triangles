@@ -17,6 +17,12 @@ checkBtn.addEventListener("click", ()=>{
          outputArea.innerHTML= "Enter all the angles"
          console.log("Enter all the angles"); 
      }
+     else if(angleInput1Val<0 || angleInput2Val<0 || angleInput3Val<0){
+        outputArea.style.display="block";
+         outputArea.style.color= "rgb(253, 11, 52)";
+         outputArea.innerHTML= "Angles can't be negative. Eliminate negativity"
+         console.log("Angles can't be negative. Eliminate negativity"); 
+     }
      else{
         var angleSum=sumTotal(angleInput1Val, angleInput2Val, angleInput3Val);
         isTriangle(angleSum);
