@@ -31,6 +31,11 @@ calculateBtn.addEventListener("click", ()=>{
         outputArea.style.color="red";
         outputArea.innerHTML="Sides can't be negative. Eliminate negativity";
     }
+    else if(side1Val==0 || side2Val==0 || side3Val==0){
+        console.log("Sides of a triangle cannot be 0 practically");
+        outputArea.style.color="red";
+        outputArea.innerHTML="Sides of a triangle cannot practically be 0.\nPlease enter values greater than 0";
+    }
     else{
         outputArea.style.color="rgb(106, 201, 69)";
         calculateArea(side1Val, side2Val, side3Val);

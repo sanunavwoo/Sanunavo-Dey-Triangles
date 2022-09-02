@@ -24,6 +24,11 @@ calculate.addEventListener("click", ()=>{
         outputArea.style.color="red";
         outputArea.innerHTML="Height or base can't be negative. Eliminate negativity";
     }
+    else if(baseVal==0 || heightVal==0){
+        console.log("Sides of a triangle cannot be 0 practically");
+        outputArea.style.color="red";
+        outputArea.innerHTML="Sides of a triangle cannot be 0 practically.\nPlease enter values greater than 0";
+    }
     else{
         outputArea.style.color="rgb(106, 201, 69)";
         calculateHypotenuse(baseVal, heightVal);
